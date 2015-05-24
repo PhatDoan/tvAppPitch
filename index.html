@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>How Far Should You Sit From The Television</title>
+  <meta name="description" content="">
+  <meta name="author" content="Phat Doan">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/default.js/css/tomorrow.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h2>How Far Should You Sit</h2>
+  <h2>From The Television</h2>
+
+<p>Plus an app to calculate the distance for you</p>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h3>Why Should I care</h3>
+  <h3>About An Optimal Distance</h3>
+
+<ul>
+<li>Sitting too close: Individual dots become visible (pixelation)</li>
+<li>Sitting too far: Pictures appear small and a waste of high-definite contents</li>
+</ul>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h3>your mileage may vary...</h3>
+  <p>Viewing distance depends on:</p>
+
+<ul>
+<li>The size of your TV</li>
+<li>The resolution of what being played</li>
+<li>Your preference (not covered here)</li>
+</ul>
+
+</section>
+<section class='class' data-state='' id='id'>
+  <h3>Rules Of Thumb For Calculate Viewing Distance</h3>
+  <p><b>THX</b>
+<br>
+Viewing distance = 1.19 * TV diagonal
+<br>
+If you have a 40-inch TV, you should sit at:</p>
+
+<pre><code class="r">round(40*1.19,1)
+</code></pre>
+
+<pre><code>## [1] 47.6
+</code></pre>
+
+<p><br>
+<b>SMPTE</b><br> Viewing distance = 1.64 * TV diagonal
+<br>
+If you have a 40-inch TV, you should sit at:</p>
+
+<pre><code class="r">round(40*1.64,1)
+</code></pre>
+
+<pre><code>## [1] 65.6
+</code></pre>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h3>TV Viewing Distance Calculator</h3>
+  <p>This app calculates optimal distance by asking you for:</p>
+
+<ol>
+<li>TV size</li>
+<li>Resolution</li>
+<li>Unit</li>
+</ol>
+
+<p><br>
+Get it here:
+<br>
+<a href="https://phatdoan.shinyapps.io/TVDistanceApp/">https://phatdoan.shinyapps.io/TVDistanceApp/</a></p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>   
+
+</html>
